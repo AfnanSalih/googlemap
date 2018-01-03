@@ -47,11 +47,7 @@ import { AngularFireModule} from 'angularfire2';
     MapPage,
     AddhumancasesPage,
     HumancasePage,
-<<<<<<< HEAD
     ShowhumancasePage
-=======
-    ShowneedingPage
->>>>>>> 29556d1b5dec01538abfa16b9ab82443f0e9f6e7
   ],
   imports: [
     BrowserModule,
@@ -72,11 +68,7 @@ import { AngularFireModule} from 'angularfire2';
     MapPage,
     AddhumancasesPage ,
     HumancasePage,
-<<<<<<< HEAD
     ShowhumancasePage
-=======
-    ShowneedingPage
->>>>>>> 29556d1b5dec01538abfa16b9ab82443f0e9f6e7
   ],
   providers: [
     StatusBar,
