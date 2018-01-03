@@ -9,7 +9,7 @@ $font-path: "../assets/fonts";
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
 // http://ionicframework.com/docs/theming/rtl-support/
-$app-direction: ltr;
+$app-direction: rtl;
 
 
 @import "ionic.globals";
@@ -22,15 +22,18 @@ $app-direction: ltr;
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
-$background-color:#d1caca;
+$background-color:white;
 $button-md-background-color-hover :#0c3317;
 $button-md-border-radius:25px;
 $card-ios-margin-right:0px;
 $item-ios-avatar-size:4rem !default;
 $card-md-background-color	:#fff;
-$font-family-md-base:"Roboto", "Helvetica Neue", sans-serif	;	
- $searchbar-ios-input-search-icon-color:#127bca;
+$font-family-md-base: 'Cairo', sans-serif;
 
+$searchbar-ios-input-search-icon-color:#127bca;
+
+$fab-list-button-background-color:#f53d3d;
+$fab-mini-size:44px;
 
 // Named Color Variables
 // --------------------------------------------------
@@ -41,17 +44,17 @@ $font-family-md-base:"Roboto", "Helvetica Neue", sans-serif	;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #71f797,
+  primary:    #5196DE,
+  secondary:  #0F8221,
   danger:     #f53d3d,
-  light:      #f4f4f4,
+  light:      #fff,
   dark:        rgb(7, 7, 7),
+  facebook:#3b5999,
+  instagram:#e4405f,
+  googleplus:#dd4b39,
 
-  twitter: (
-    base: #04528d,
-    contrast: rgb(204, 204, 204)
 
-  )
+  twitter: #55acee
 );
 
 

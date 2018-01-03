@@ -4,6 +4,7 @@ import { AboutPage } from '../about/about';
 import {ContactPage } from '../contact/contact';
 import {  HumancasePage } from '../humancase/humancase';
 import {  AddhumancasesPage } from '../addhumancases/addhumancases';
+import { ShowhumancasePage} from '../showhumancase/showhumancase';
 import { HomePage } from '../home/home';
 import {  NeedingPage }  from  '../needing/needing';
 import {AddneedingPage }  from  '../addneeding/addneeding';
@@ -21,6 +22,7 @@ export class TabsPage {
   tab6Root =  AddneedingPage;
   tab7Root = AboutPage;
   tab8Root = ContactPage;
+  tab9Root = ShowhumancasePage;
   
   constructor() {
 
