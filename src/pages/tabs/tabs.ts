@@ -9,6 +9,10 @@ import { HomePage } from '../home/home';
 import {  NeedingPage }  from  '../needing/needing';
 import {AddneedingPage }  from  '../addneeding/addneeding';
 import { MapPage }  from  '../map/map';
+import {MylocationPage}  from  '../mylocation/mylocation';
+
+
+
 @Component({
   templateUrl: 'tabs.html'
 })
@@ -23,6 +27,7 @@ export class TabsPage {
   tab7Root = AboutPage;
   tab8Root = ContactPage;
   tab9Root = ShowhumancasePage;
+  tab10Root = MylocationPage;
   
   constructor() {
 

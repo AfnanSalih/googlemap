@@ -14,6 +14,8 @@ import {  NeedingPage }  from  '../pages/needing/needing';
 import {AddneedingPage }  from  '../pages/addneeding/addneeding';
 import  {ShowneedingPage }  from  '../pages/showneeding/showneeding';
 import {MapPage}  from  '../pages/map/map';
+import {MylocationPage}  from  '../pages/mylocation/mylocation';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -21,6 +23,12 @@ import { AngularFireModule} from 'angularfire2';
  import { AngularFireDatabaseModule,AngularFireDatabase } from 'angularfire2/database';
  import { AngularFireAuthModule } from 'angularfire2/auth';
  import { AngularFirestore  } from 'angularfire2/firestore';
+
+ import { Geolocation } from '@ionic-native/geolocation';
+ import {HttpModule} from '@angular/http';
+
+ 
+import {GoogleMaps} from '@ionic-native/google-maps';
 
  export const  firebaseConfig = {
   apiKey: "AIzaSyA0VKlfnYU8Oe4RS6TRu_ONiK9tsJF2-8E",
@@ -47,11 +55,18 @@ import { AngularFireModule} from 'angularfire2';
     MapPage,
     AddhumancasesPage,
     HumancasePage,
-    ShowhumancasePage
+    ShowhumancasePage,
+    ShowneedingPage ,
+    MylocationPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp,{
+      backButtonText: 'الرجوع',
+      backButtonIcon:'arrow-back'
+      
+    }),
+    HttpModule,    
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule 
@@ -68,9 +83,12 @@ import { AngularFireModule} from 'angularfire2';
     MapPage,
     AddhumancasesPage ,
     HumancasePage,
-    ShowhumancasePage
+    ShowhumancasePage,
+    ShowneedingPage ,
+    MylocationPage
   ],
   providers: [
+    Geolocation,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}

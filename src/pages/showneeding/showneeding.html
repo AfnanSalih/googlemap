@@ -20,7 +20,7 @@
            <h1> {{myInfo.firstname}}</h1>    
           </ion-item>
     
-        <img src="assets/imgs/img/info.jpeg" >
+        <img src="assets/imgs/info.jpeg" >
 
         </ion-card>
 
@@ -28,33 +28,22 @@
         <ion-card>
 
             <ion-card-header>
-                <h1 text-right>نبذة مختصرة عن الحاجة</h1>
+                <h1 text-right>نبذة  عن الحاجة</h1>
            </ion-card-header>
 
         <ion-card-content>          
           <h2>  {{myInfo.infor}} </h2>
+
+          <ion-row>
+              <ion-col col-6>
+                  <p> {{myInfo.phone}} </p>
+              </ion-col>
+              <ion-col col-6>
+                   col2
+              </ion-col >
+            </ion-row>
+
         </ion-card-content>
-      
-        <ion-row>
-
-          <ion-col>
-
-            <p text-right>  <ion-icon ios="ios-call" md="md-call">   </ion-icon>
-              {{myInfo.phone}}      </p> 
-
-          </ion-col>
-
-
-          <ion-col>
-
-              <p text-left>   <ion-icon ios="ios-compass" md="md-compass"> </ion-icon>                       
-                {{myInfo. address}} </p>
-            
-          </ion-col>
-
-         
-        </ion-row>
-      
       </ion-card> 
     
 
