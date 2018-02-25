@@ -15,6 +15,7 @@ import {AddneedingPage }  from  '../pages/addneeding/addneeding';
 import  {ShowneedingPage }  from  '../pages/showneeding/showneeding';
 import {MapPage}  from  '../pages/map/map';
 import {MylocationPage}  from  '../pages/mylocation/mylocation';
+import {JsmapPage} from '../pages/jsmap/jsmap';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -28,7 +29,7 @@ import { AngularFireModule} from 'angularfire2';
  import {HttpModule} from '@angular/http';
 
  
-import {GoogleMaps} from '@ionic-native/google-maps';
+//import {GoogleMaps} from '@ionic-native/google-maps';
 
  export const  firebaseConfig = {
   apiKey: "AIzaSyA0VKlfnYU8Oe4RS6TRu_ONiK9tsJF2-8E",
@@ -57,7 +58,8 @@ import {GoogleMaps} from '@ionic-native/google-maps';
     HumancasePage,
     ShowhumancasePage,
     ShowneedingPage ,
-    MylocationPage
+    MylocationPage,
+    JsmapPage
   ],
   imports: [
     BrowserModule,
@@ -85,7 +87,8 @@ import {GoogleMaps} from '@ionic-native/google-maps';
     HumancasePage,
     ShowhumancasePage,
     ShowneedingPage ,
-    MylocationPage
+    MylocationPage,
+    JsmapPage
   ],
   providers: [
     Geolocation,

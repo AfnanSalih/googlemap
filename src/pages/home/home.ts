@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams  } from 'ionic-angular';
 
 import { NeedingPage}  from   '../needing/needing';
-import {MapPage}  from   '../map/map';
+import {JsmapPage}  from   '../jsmap/jsmap';
 import {HumancasePage} from  '../humancase/humancase';
 import {AboutPage} from  '../about/about';
 
@@ -17,7 +17,7 @@ export class HomePage {
   }
 
   goToMap(){
-    this.navCtrl.push ( MapPage)
+    this.navCtrl.push ( JsmapPage)
   }
 
 

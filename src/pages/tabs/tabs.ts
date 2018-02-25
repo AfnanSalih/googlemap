@@ -10,7 +10,7 @@ import {  NeedingPage }  from  '../needing/needing';
 import {AddneedingPage }  from  '../addneeding/addneeding';
 import { MapPage }  from  '../map/map';
 import {MylocationPage}  from  '../mylocation/mylocation';
-
+import {JsmapPage} from '../jsmap/jsmap';
 
 
 @Component({
@@ -28,7 +28,7 @@ export class TabsPage {
   tab8Root = ContactPage;
   tab9Root = ShowhumancasePage;
   tab10Root = MylocationPage;
-  
+  tab11Root = JsmapPage;
   constructor() {
 
   }

@@ -1,20 +1,33 @@
 [
-
+    {
+        "latitude":33.759684 ,
+        "longitude": 44.607975,
+        "name":"Baqubah",
+        "title":"اضغط لتفاصيل اكثر",
+        "details":"بعكوبه"
+       
+    },
   {
       "latitude":33.843152 ,
       "longitude": 44.522209,
-      "name":"khalis"
+      "name":"khalis",
+      "title":"اضغط لتفاصيل اكثر",
+      "details":"الخالص"
   },
 
   {
     "latitude":34.404077 ,
     "longitude": 45.386353,
-    "name":"khanaqeen"
+    "name":"khanaqeen",
+    "title":"اضغط لتفاصيل اكثر",
+    "details":"خانقين"
 },
 {
     "latitude":34.013396 ,
     "longitude":44.869995,
-    "name":"Miqdadiyah"
+    "name":"Miqdadiyah",
+    "title":"اضغط لتفاصيل اكثر",
+    "details":"مقدادية"
 }
 
 ]

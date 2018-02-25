@@ -1,29 +1,29 @@
-import { Component  ,ViewChild ,ElementRef} from '@angular/core';
-import { IonicPage, NavController, NavParams,Platform } from 'ionic-angular';
+import { Component ,ViewChild ,ElementRef} from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
-
 
 declare var google;
 
 @IonicPage()
 @Component({
-  selector: 'page-map',
-  templateUrl: 'map.html',
+  selector: 'page-jsmap',
+  templateUrl: 'jsmap.html',
 })
-export class MapPage {
-   
+export class JsmapPage {
 
   @ViewChild('map') mapElement:ElementRef;
   map: any;
    
     
   constructor(public navCtrl: NavController,
-              public navParams: NavParams,
-              private http:Http) {
+     public navParams: NavParams,private http:Http) {
   }
 
-
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad JsmapPage');
+    this.loadMap();
+  }
   loadMap() {
     let latLng = new google.maps.LatLng(33.937663,44.630127);
     
@@ -64,8 +64,7 @@ export class MapPage {
       })(marker, i));
     }
     }
-
-
+   
 
 
 }

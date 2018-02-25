@@ -28,12 +28,15 @@ export class MylocationPage {
 
 
   displayGoogleMap(){
-    let latLng = new google.maps.LatLng(33.803685,44.573364);
+    let latLng = new google.maps.LatLng(33.937663,44.630127);
     let mapOption={
       center:latLng,
-      zoom:12,
+      zoom:10,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }
+
+  
+
     this.map=new google.maps.Map(this.mapElement.nativeElement,mapOption);
   }
 
@@ -43,13 +46,35 @@ getmarkers(){
   })
 }
 addMarkersMap(markers){
+
 for(let marker of markers){
   var loc ={lat:marker.latitude , lng:marker.longitude}
   marker=new google.maps.Marker({
     position :loc,
-    map : this.map
-  })
+    map : this.map,
+    title : marker.title,
+    label : marker.details,
+    
+
+  });
+//////
+
+
+  let infoWindow = new google.maps.InfoWindow({
+    content : marker.details,
+    maxWidth: 200,
+
+    });
+
+    google.maps.event.addListener(marker, 'click', () => {
+      infoWindow.open(this.map, marker);
+      });
   
+//////
 }
 }
+
+
+
+
 }
